@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="es-principal.css">
+</head>
+<body>
+    <header>
+        <div class="con-encabezado">
+            <img src="img/cic.png" alt="logo del colegio">
+            <p>
+                Colegio Inmaculada Concepción
+            </p>
+        </div>
+    </header>
+    <nav>
+        <div class="con-nav">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Cursos</a>
+            <a href="#">Galería</a>
+            <a href="#">Contactos</a> 
+        </div>       
+    </nav>
+    <div class="con-img"><img src="img/emilie.png" height="300px" width="960"></div>
+    <main>
+        <div class="f-contenedor">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.7615244024571!2d-57.60508262078778!3d-25.302655248990465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da864b0c6189d%3A0x80d22ab05496de3c!2sColegio%20L'Immacul%C3%A9e%20Conception!5e0!3m2!1ses!2spy!4v1645187566653!5m2!1ses!2spy" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <section class="servicio">                    
+                <h3>Espiritualidad</h3>
+                <a href="pag/espiritualidad.html" target="_blank">
+                    <div class="iconos-1">
+                        <img src="img/fe.jpg" id="img-section1" alt="logo del colegio">    
+                    </div>
+                </a>
+                <p>
+                    <a href="pag/espiritualidad.html" target="_blank">
+                    </a>
+                </p>
+                                
+                <h3>Enseñanza</h3>
+                <a href="pag/enseñanza.html" target="_blank">
+                    <div class="iconos-2">
+                        <img src="img/en.jpg" id="img-section2" alt="logo del colegio">  
+                    </div>
+                </a>
+                <p> <br>
+                    <a href="pag/enseñanza.html" target="_blank">
+                    </a>
+                </p>
+        
+                <h3>Solidaridad</h3>
+                <a href="pag/solidaridad.html" target="_blank">
+                    <div class="iconos-3">
+                        <img src="img/sol.jpg" id="img-section3" alt="logo del colegio"> 
+                    </div>
+                </a>
+                <p>
+                    <a href="pag/solidaridad.html" target="_blank">
+                    </a>
+                </p>    
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="con-footer">
+            <p>&copy; 2024 Colegio Inmaculada Concepción. Todos los derechos reservados.</p>
+            <p>Dirección: F9JM+3RC, C. 29 de Septiembre, Cd. del Este 100151</p>
+            <p>Teléfono: +595 (061) 500 875</p>
+            <p>Email: info@colegiocic.com</p>
+        </div>
+    </footer>
+    
+    <section id="contactos">
+        <h2>Contactos</h2>
+        <p>Puedes contactarnos a través de nuestro correo electrónico o visitarnos en nuestras oficinas.</p>
+        <form class="form-contacto" action="mailto:info@colegioic.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.classList.add("appear");
+            });
+        });
+    </script>
+</body>
+</html>
